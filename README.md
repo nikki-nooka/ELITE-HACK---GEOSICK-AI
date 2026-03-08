@@ -65,7 +65,7 @@ GeoSick combines real-time environmental analysis with personal health tools:
 
 ## 🔗 Submission Links
 
-*   **GitHub Repository:** [https://github.com/nookanikshith/geosick](https://github.com/nookanikshith/geosick)
+*   **GitHub Repository:** [https://github.com/nikki-nooka/ELITE-HACK---GEOSICK-AI]([https://github.com/nookanikshith/geosick](https://github.com/nikki-nooka/ELITE-HACK---GEOSICK-AI)
 *   **Live Demo / Deployed Link:** [https://ais-pre-anglbbbfgd3spbgxle2zjs-656041840677.asia-southeast1.run.app](https://ais-pre-anglbbbfgd3spbgxle2zjs-656041840677.asia-southeast1.run.app)
 *   **Prototype / Figma / PPT Link:** [View Project Presentation](https://docs.google.com/presentation/d/your-link-here)
 
