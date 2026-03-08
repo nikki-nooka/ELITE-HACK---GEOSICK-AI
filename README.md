@@ -74,7 +74,7 @@ GeoSick combines real-time environmental analysis with personal health tools:
 ## 🎥 Demo & Pitch
 
 *   **Demo Video (Walkthrough):** [[Watch Demo]](https://drive.google.com/file/d/148WkEs5q4xNxiGtGiPqv5eBKiaxINeaY/view?usp=sharing)
-*   **Pitch Video (Impact & Vision):** [Watch Pitch](https://drive.google.com/file/d/1diBm7q2Tng0WmBi7MyqA4i59zLHtFKEr/view?usp=sharing))
+*   **Pitch Video (Impact & Vision):** [[Watch Pitch]](https://drive.google.com/file/d/1diBm7q2Tng0WmBi7MyqA4i59zLHtFKEr/view?usp=sharing))
 
 ---
 
