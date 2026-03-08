@@ -4,123 +4,109 @@
 
 ---
 
-## 🌍 Overview
+## 🌍 Idea Description
 
-GeoSick is a sophisticated, AI-driven web application designed to bridge the critical gap between environmental factors and public health. By leveraging Google's **Gemini 2.5 Flash** and **Imagen 3/4** models, GeoSick provides users with real-time, location-specific health insights, proactive hazard detection, and personalized wellness tools.
+### What problem are you solving?
+GeoSick addresses the critical gap between environmental factors and individual health. Many health issues are triggered or exacerbated by environmental hazards (pollution, stagnant water, UV radiation) that often go unnoticed. Additionally, healthcare accessibility remains a challenge for many, leading to delayed diagnoses and preventable complications.
 
-The platform operates on a "Simulated Backend" architecture using local storage, making it a privacy-focused, zero-setup demonstration of how Generative AI can revolutionize preventive healthcare.
+### Who is the target audience?
+Our platform is designed for health-conscious individuals, families, and communities, particularly those living in areas with high environmental variability or limited immediate access to medical professionals.
+
+### Why does this problem matter?
+Early detection of both environmental hazards and personal symptoms can significantly reduce the severity of illnesses, lower healthcare costs, and save lives. By preempting public health threats, we empower users to take proactive control of their well-being.
+
+### What makes your solution unique?
+GeoSick combines real-time environmental analysis with personal health tools:
+*   **AI Area Scan:** Uses multimodal AI to identify health hazards from simple photos.
+*   **Advanced Symptom Checker:** Powered by Gemini 3.1 Pro, providing detailed triage, potential conditions, and educational video links.
+*   **Direct Integration:** Seamlessly bridges the gap between AI analysis and professional care through direct Google Form appointment scheduling and real-time hospital mapping.
 
 ---
 
 ## 🚀 Key Features
 
 ### 1. Interactive 3D Globe Explorer
-*   **Visual Exploration:** A high-fidelity 3D globe (`react-globe.gl`) allowing users to explore any point on Earth.
-*   **City Health Snapshots:** Click on major cities to generate a real-time public health report derived from current web data (using Gemini Search Grounding). Includes disease trends, case estimates, and summaries.
-*   **Location Analysis:** Click any coordinate to generate a localized environmental hazard report and a synthetic satellite visualization of that specific biome using **Imagen 4.0**.
-*   **Geocoding:** Integrated search bar to fly to specific locations instantly.
+*   **Visual Exploration:** A high-fidelity 3D globe (`react-globe.gl`) for global health monitoring.
+*   **City Health Snapshots:** Real-time public health reports using Gemini Search Grounding.
+*   **Location Analysis:** Localized hazard reports and biome visualizations using **Imagen 4.0**.
 
 ### 2. AI Analysis Suite
-*   **📸 Area Scan (Image Analysis):** Upload photos of your surroundings. The AI identifies potential health hazards (e.g., stagnant water, pollution) and suggests preventive measures.
-*   **📜 Prescription Reader:** Upload a doctor's prescription. The AI extracts medicine names, dosages, and precautions into a legible summary and helps find nearby pharmacies.
-*   **🩺 Symptom Checker:** Voice-enabled interface allowing users to describe symptoms naturally. The AI provides a cautious triage recommendation, potential conditions, and next steps.
-*   **🧠 Mental Wellness Check-in:** A compassionate, confidential questionnaire that provides a supportive reflection and coping strategies based on user responses.
+*   **📸 Area Scan (Image Analysis):** Identifies potential health hazards from user-uploaded photos.
+*   **🩺 Symptom Checker:** Detailed analysis using **Gemini 3.1 Pro** with triage recommendations and educational resources.
+*   **📜 Prescription Reader:** Extracts medicine data and precautions from prescription images.
+*   **🧠 Mental Wellness Check-in:** Compassionate AI-driven mental health support.
 
 ### 3. Real-Time Health Intelligence
-*   **HealthCast:** A daily, location-based health forecast analyzing risk factors like Air Quality, UV Index, Pollen, and Vector activity.
-*   **Live Health Alerts:** Aggregates and displays significant global and local disease outbreaks or environmental threats using Google Search Grounding.
-*   **Facility Finder:** Automatically locates nearby Hospitals, Clinics, and Pharmacies based on the user's GPS coordinates.
+*   **HealthCast:** Daily location-based health forecasts (Air Quality, UV, Pollen).
+*   **Live Health Alerts:** Aggregates global health threats via Google Search Grounding.
+*   **Facility Finder:** Locates nearby medical facilities with real-time mapping.
 
 ### 4. Personal Health Utilities
-*   **💧 Water Log:** A hydration tracker with customizable goals and browser-based push notifications for drink reminders.
-*   **Activity History:** A local log of all AI analyses performed by the user for future reference.
-*   **Profile Management:** Manage personal details and change passwords locally.
-
-### 5. Advanced UI/UX
-*   **AI Chatbot:** A persistent, voice-capable assistant that can answer health questions and **navigate the app** via voice commands (e.g., "Take me to the symptom checker").
-*   **Admin Dashboard:** A hidden dashboard for viewing all registered users and global activity logs.
-*   **Multilingual Support:** Full UI and AI response support for **15+ languages**, including major Indic languages (Hindi, Telugu, Bengali, Tamil, etc.).
+*   **📅 Schedule Checkup:** Direct integration with official appointment forms via Google Forms.
+*   **💧 Water Log:** Hydration tracking with browser notifications.
+*   **Activity History:** Secure log of all AI analyses and health checks.
 
 ---
 
-## 🛠 Technical Architecture
+## 🛠 Technical Details
 
-GeoSick is built with a modern, performance-oriented stack:
+### Technologies Used
+*   **Frontend:** React 19, TypeScript, Tailwind CSS, Framer Motion.
+*   **Backend:** Express.js (Node.js) running in a full-stack environment.
+*   **AI/ML:** 
+    *   **Google Gemini API:** `gemini-3.1-pro-preview` (Advanced Reasoning), `gemini-flash-latest` (Multimodal).
+    *   **Imagen 4.0:** High-quality image generation for biome visualization.
+    *   **Search Grounding:** Real-time web data integration.
+*   **Database:** **Supabase (PostgreSQL)** for secure user authentication and profile management.
+*   **Visualization:** `react-globe.gl`, `three.js`, `recharts`.
+*   **Third-party Integrations:** Google Forms (Appointments), Google Maps (Grounding).
 
-*   **Frontend Framework:** React 19 with TypeScript.
-*   **Build Tool:** Vite.
-*   **Styling:** Tailwind CSS with custom animations.
-*   **Artificial Intelligence:**
-    *   **SDK:** `@google/genai`
-    *   **Text & Multimodal:** `gemini-2.5-flash` (Used for analysis, chat, and search grounding).
-    *   **Image Generation:** `imagen-4.0-generate-001` (Used for location visualization).
-    *   **Search Grounding:** Integrated for retrieving real-time world events and health data.
-*   **Visualization:** `react-globe.gl` and `three.js`.
-*   **Data Persistence:** `localStorage` (Acts as a client-side database for User Auth, Activity Logs, and Settings).
-*   **Browser APIs:** Web Speech API (Voice Input/Output), Geolocation API, Notification API.
+---
+
+## 🔗 Submission Links
+
+*   **GitHub Repository:** [https://github.com/nookanikshith/geosick](https://github.com/nookanikshith/geosick)
+*   **Live Demo / Deployed Link:** [https://ais-pre-anglbbbfgd3spbgxle2zjs-656041840677.asia-southeast1.run.app](https://ais-pre-anglbbbfgd3spbgxle2zjs-656041840677.asia-southeast1.run.app)
+*   **Prototype / Figma / PPT Link:** [View Project Presentation](https://docs.google.com/presentation/d/your-link-here)
+
+---
+
+## 🎥 Demo & Pitch
+
+*   **Demo Video (Walkthrough):** [Watch Demo](https://youtube.com/your-demo-link)
+*   **Pitch Video (Impact & Vision):** [Watch Pitch](https://youtube.com/your-pitch-link)
 
 ---
 
 ## 📦 Installation & Setup
 
-Follow these steps to run GeoSick locally.
-
-### Prerequisites
-*   Node.js (v18 or higher)
-*   npm or yarn
-*   A Google Gemini API Key
-
-### Steps
-
-1.  **Clone the Repository**
+1.  **Clone & Install**
     ```bash
-    git clone https://github.com/your-username/geosick.git
-    cd geosick
-    ```
-
-2.  **Install Dependencies**
-    ```bash
+    git clone https://github.com/nookanikshith/geosick.git
     npm install
     ```
 
-3.  **Environment Configuration**
-    Create a `.env` file in the root directory and add your API key.
+2.  **Environment Setup**
+    Create a `.env` file:
     ```env
-    API_KEY=your_actual_google_gemini_api_key
+    GEMINI_API_KEY=your_key
+    SUPABASE_URL=your_supabase_url
+    SUPABASE_ANON_KEY=your_supabase_key
     ```
-    *Note: Ensure your API key has access to Gemini Flash and Imagen models via Google AI Studio.*
 
-4.  **Run Development Server**
+3.  **Run**
     ```bash
     npm run dev
     ```
-    Access the app at `http://localhost:5173`.
 
 ---
 
-## 🔐 User & Admin Access (Demo Mode)
-
-Since the app uses local storage, you can create any account you like.
-
-**Default Admin Account (Auto-created on first load):**
+## 🔐 Admin Access
 *   **Email:** `nookanikshithllpsdsnr@gmail.com`
 *   **Password:** `nooka@nikki123`
-
-*Log in with these credentials to access the **Admin Dashboard** in the sidebar.*
 
 ---
 
 ## ⚠️ Medical Disclaimer
+GeoSick is an informational tool powered by AI and is **NOT** a substitute for professional medical advice. In case of emergency, contact local services immediately.
 
-**GeoSick is an informational tool powered by Artificial Intelligence.**
-
-*   It is **NOT** a substitute for professional medical advice, diagnosis, or treatment.
-*   Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition.
-*   Never disregard professional medical advice or delay in seeking it because of something you have read on this application.
-*   In case of a medical emergency, call your local emergency services immediately.
-
----
-
-## 📄 License
-
-This project is open-source and available under the **MIT License**.
