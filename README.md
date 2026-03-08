@@ -82,7 +82,7 @@ GeoSick combines real-time environmental analysis with personal health tools:
 
 1.  **Clone & Install**
     ```bash
-    git clone [https://github.com/nookanikshith/geosick.git](https://github.com/nikki-nooka/ELITE-HACK---GEOSICK-AI)
+    git clone https://github.com/nikki-nooka/ELITE-HACK---GEOSICK-AI
     npm install
     ```
 
